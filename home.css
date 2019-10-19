@@ -25,3 +25,21 @@
 .active {
     background-color: darkred;
 }
+
+.top-stories-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 2%;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2%;
+}
+
+.top-stories-card-container {
+    padding: 2px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.top-stories-card-container:hover {
+    transition: 0.75s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
