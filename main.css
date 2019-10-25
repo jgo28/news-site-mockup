@@ -9,8 +9,9 @@ html {
 
 h2 {
     padding-left: 1%;
+    margin-left: 1%;
     margin-top: 4%;
-    /* margin-bottom: 2%; */
+    border-left: 10px solid black;
 }
 
 p {
@@ -22,12 +23,20 @@ a {
     text-decoration: none; 
 }
 
+hr { 
+    background-color: black; 
+    height: 1px; 
+    border: 0; 
+    margin-bottom: 2.5%;
+}
+
+/* https://www.w3schools.com/howto/howto_js_topnav.asp */
 #navigation-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -44,10 +53,22 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: relative;
 }
 
 #navigation-bar a:hover {
     background-color: darkred;
+}
+
+/* Style the search box inside the navigation bar */
+#navigation-bar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 12px;
+    font-family: 'Jomolhari', serif;
 }
 
 .main {
@@ -227,6 +248,10 @@ a {
     font-family: 'Jomolhari', serif;
     font-size: 12px;
     text-align: center;
+}
+
+#article-header h5 {
+    margin-bottom: 1%;
 }
 
 #article-body figcaption {
