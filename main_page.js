@@ -1,3 +1,7 @@
+// Joshua Go
+// Web Development
+// Assignment 2
+// 10-30-19
 var slideIndex = 1;
 showSlides(slideIndex);
 
